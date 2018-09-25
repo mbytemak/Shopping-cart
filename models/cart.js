@@ -3,7 +3,19 @@ var Schema = mongoose.Schema;
 
 var cart = new Schema({
  
-  cartItems: { type: Array, default: void 0 } 
+  cartItems: [
+{
+     productId: {
+        type: String,
+        required: true
+      },
+      quantity: {
+        type: String,
+        required: true
+      }
+    }
+
+  ]
 
 
 });
